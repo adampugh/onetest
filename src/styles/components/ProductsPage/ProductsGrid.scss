@@ -1,0 +1,34 @@
+.productsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 40px 0;
+}
+
+.productsGrid__products {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+.productsGrid__buttons {
+    padding-top: 20px;
+    button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        &:hover {
+            cursor: pointer;
+            @include boxshadow;
+        }
+    }
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .productsGrid {
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .productsGrid__products {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

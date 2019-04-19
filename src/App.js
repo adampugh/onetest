@@ -1,19 +1,16 @@
-import './App.css'
+import React from 'react';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import reducer from './reducers';
 
-import React, {Component} from 'react'
+import ProductsPage from './components/ProductsPage/ProductsPage';
 
-class App extends Component {
-  render() {
-    return <div className="App">
-      <div className="App-heading App-flex">
-        <h2>Welcome to <span className="App-react">React</span></h2>
-      </div>
-      <div className="App-instructions App-flex">
-        <img className="App-logo" src={require('./react.svg')}/>
-        <p>Edit <code>src/App.js</code> and save to hot reload your changes.</p>
-      </div>
-    </div>
-  }
-}
+const store = createStore(reducer)
 
-export default App
+const App = () => (
+    <Provider store={store}>
+        <ProductsPage />
+    </Provider>
+);
+
+export default App;

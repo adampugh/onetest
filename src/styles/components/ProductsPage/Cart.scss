@@ -1,0 +1,55 @@
+.cart {
+    padding: 10px;
+    background: white;
+    @include boxshadow;
+}
+
+.cart__title {
+    padding: 20px 0 20px 5px;
+    span {
+        border: $pink;
+        border-radius: 50%;
+        background: $pink;
+        color: white;
+        padding: 2px 7px;
+        margin-left: 5px;
+        font-size: .7em;
+    }
+}
+
+.cart__product {
+    box-sizing: border-box;
+    padding: 20px 5px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $off-white;
+}
+
+.cart__product__trash {
+    color: $pink;
+}
+
+.cart__product__price {
+    padding-left: 5px;
+    text-align: right;
+    i, svg {
+        margin-top: 5px;
+        text-align: right;
+        cursor: pointer;
+    }
+}
+
+.cart__total {
+    box-sizing: border-box;
+    padding: 20px 15px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    background: $off-white;
+}
+
+.cart__total__taxes {
+    display: block;
+    color: grey;
+    font-size: .7em;
+}

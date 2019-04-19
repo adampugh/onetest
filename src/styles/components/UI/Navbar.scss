@@ -1,0 +1,40 @@
+.navbar {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    img {
+        height: 60px;
+    }
+}
+
+.navbar__icons {
+    align-self: center;
+}
+
+.navbar__icons__cart {
+    svg, i {
+        color: $pink;
+        margin-right: 5px;
+    }
+    span {
+        border: $pink;
+        border-radius: 50%;
+        background: $pink;
+        color: white;
+        padding: 2px 7px;
+        margin-left: 5px;
+        font-size: .7em;
+    }
+}
+
+.navbar__icons__menu {
+    color: $pink;
+    margin-left: 10px;
+}
+
+
+@media (min-width: $desktop-breakpoint) {
+    .navbar__icons__menu {
+        margin-left: 50px;
+    }
+}

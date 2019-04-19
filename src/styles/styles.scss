@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo|Lato|Source+Sans+Pro');
+
+@import "./base/mixins.scss";
+@import "./base/settings.scss";
+
+@import "./components/ProductsPage/ProductsPage.scss";
+@import "./components/ProductsPage/ProductsGrid.scss";
+@import "./components/ProductsPage/Product.scss";
+@import "./components/ProductsPage/Cart.scss";
+
+
+@import "./components/UI/Navbar.scss";
+@import "./components/UI/Footer.scss";
+@import "./components/UI/Spinner.scss";
