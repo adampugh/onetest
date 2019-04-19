@@ -1,12 +1,4 @@
-import React, { Component, Fragment } from 'react';
-
-// request data from api to render products grid -> prob best within the component
-// allow filtering of products
-// setup redux to allow for adding of items 
-// add router for product desc??
-// add modal for mobile cart info
-// fetch navbar data via redux
-
+import React, { Component } from 'react';
 
 import Banner from '../../assets/banner.jpg';
 import Navbar from '../UI/Navbar';
